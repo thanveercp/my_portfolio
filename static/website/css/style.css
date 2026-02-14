@@ -1,0 +1,205 @@
+ /* -------------------------
+   BASE
+-------------------------- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #ffffff;
+}
+
+/* -------------------------
+   NAV / HEADER
+-------------------------- */
+.header_section {
+  background: #252f2d;
+  padding: 10px 0;
+}
+
+.logo_text{
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff !important;
+  text-decoration: none;
+}
+.logo_text span{ color: #f5c729; }
+
+.navbar-nav .nav-link{
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 30px;
+}
+.navbar-nav .nav-link:hover{
+  color: #f5c729 !important;
+}
+
+/* -------------------------
+   HERO
+-------------------------- */
+.hero_simple{
+  background: #252f2d;
+  padding: 70px 0;
+}
+
+.hero_hello{
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.hero_name{ color: #f5c729; }
+
+.hero_title{
+  color: #fff;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 10px 0 15px;
+}
+
+.hero_sub{
+  color: rgba(255,255,255,0.75);
+  max-width: 560px;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.hero_buttons .btn{
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.profile-photo-wrap{
+  text-align: center;
+}
+.profile-photo{
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+/* -------------------------
+   SECTIONS
+-------------------------- */
+.section_light{
+  background: #f7f7f7;
+  padding: 55px 0;
+}
+.section_white{
+  background: #fff;
+  padding: 55px 0;
+}
+
+.section_title{
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  color: #111;
+}
+.section_title span{ color: #f5c729; }
+
+.section_title.dark{ color: #111; }
+
+.section_text{
+  max-width: 850px;
+  margin: 14px auto 0;
+  text-align: center;
+  line-height: 1.8;
+  color: #444;
+  font-size: 15px;
+}
+
+/* -------------------------
+   SERVICES (COMPACT CARDS)
+-------------------------- */
+.service_card{
+  background: #fff;
+  border: 2px solid #f5c729;
+  border-radius: 16px;
+  padding: 18px 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  height: 100%;
+}
+.service_icon{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.service_card h4{
+  font-size: 15px;
+  margin: 0;
+  font-weight: 800;
+  color: #222;
+}
+
+/* -------------------------
+   PORTFOLIO
+-------------------------- */
+.project_card{
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.project_card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.project_body{
+  padding: 14px;
+}
+.project_body h5{
+  margin: 0 0 6px;
+  font-weight: 800;
+  font-size: 16px;
+}
+.project_body p{
+  margin: 0 0 12px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* -------------------------
+   CONTACT
+-------------------------- */
+.contact_form .form-control{
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.contact_note{
+  text-align: center;
+  color: #444;
+}
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+.footer_section{
+  background: #252f2d;
+  padding: 18px 0;
+}
+.footer_text{
+  margin: 0;
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+}
+
+/* -------------------------
+   RESPONSIVE
+-------------------------- */
+@media (max-width: 991px){
+  .hero_title{ font-size: 42px; }
+}
+@media (max-width: 576px){
+  .hero_title{ font-size: 34px; }
+  .navbar-nav .nav-link{ font-size: 13px; }
+}

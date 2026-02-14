@@ -1,0 +1,255 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thanveer CP | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- TEXT LOGO (no image) -->
+        <a class="navbar-brand logo_text" href="{% url 'home' %}">
+          THANVEER <span>CP</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero_simple">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- LEFT -->
+        <div class="col-lg-7">
+          <h3 class="hero_hello">Hello, I’m <br><span class="hero_name">Thanveer</span></h3>
+          <h1 class="hero_title">Python / Django Developer</h1>
+
+          <p class="hero_sub">
+            11+ years Kuwait experience in Accounts & Administration — now transitioning into IT.
+            Building practical web apps with Python, Django, HTML & CSS.
+          </p>
+
+          <div class="hero_buttons">
+            <a href="#portfolio" class="btn btn-warning mr-2">View Projects</a>
+            <a href="#contact" class="btn btn-outline-light mr-2">Contact Me</a>
+
+            <!-- CV DOWNLOAD -->
+            <a class="btn btn-light" href="{% static 'website/files/thanveer_resume_v2.pdf' %}" target="_blank"
+              rel="noopener">
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="col-lg-5 mt-4 mt-lg-0">
+          <div class="profile-photo-wrap">
+            <img src="{% static 'website/images/me.jpg' %}" alt="Thanveer" class="profile-photo">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (SHORT) -->
+  <section id="about" class="section_light">
+    <div class="container">
+      <h2 class="section_title">About <span>Me</span></h2>
+      <p class="section_text">
+        Motivated Python Backend Developer with hands-on experience in building RESTful APIs using Django and Django
+        REST Framework. Transitioning from 11 years of Accounts & Administrative experience in Kuwait into the IT field.
+        Strong understanding of backend logic, database handling (SQLite/PostgreSQL), CRUD operations, authentication,
+        and API development. Passionate about building scalable backend systems and continuously improving technical
+        skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section id="services" class="section_white">
+    <div class="container">
+      <h2 class="section_title dark">Technical <span>Skills</span></h2>
+
+      <div class="row mt-4">
+        <div class="col-md-3 col-6 mb-4">
+          <div class="service_card">
+            <div class="service_icon">⚙️</div>
+            <h4>Backend</h4>
+            <p class="small text-muted mt-2">Python, Django, DRF, REST API</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 mb-4">
+          <div class="service_card">
+            <div class="service_icon">🗄️</div>
+            <h4>Database</h4>
+            <p class="small text-muted mt-2">SQLite, PostgreSQL, ORM</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 mb-4">
+          <div class="service_card">
+            <div class="service_icon">🎨</div>
+            <h4>Frontend</h4>
+            <p class="small text-muted mt-2">HTML, CSS, React (Basic)</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6 mb-4">
+          <div class="service_card">
+            <div class="service_icon">🧰</div>
+            <h4>Tools</h4>
+            <p class="small text-muted mt-2">Git, VS Code, Postman</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section_light">
+    <div class="container">
+      <h2 class="section_title">My <span>Experience</span></h2>
+      <div class="row mt-4">
+        <div class="col-lg-10 mx-auto">
+
+          <div class="experience_item mb-4 p-4 bg-white rounded shadow-sm">
+            <h4 class="mb-1">IT Transition – Backend Development Practice</h4>
+            <p class="text-muted mb-2">2025 – Present</p>
+            <p>Developing RESTful APIs, implementing business logic, and practicing clean code with Python & Django.</p>
+          </div>
+
+          <div class="experience_item mb-4 p-4 bg-white rounded shadow-sm">
+            <h4 class="mb-1">Accountant Cum Cashier | Jumbo Tour & Travel Co. Kuwait</h4>
+            <p class="text-muted mb-2">Sept 2018 – Dec 2024</p>
+            <p>Managed financial transactions, daily sales reports, invoices, and bank reconciliations.</p>
+          </div>
+
+          <div class="experience_item mb-4 p-4 bg-white rounded shadow-sm">
+            <h4 class="mb-1">Document Controller and Cashier | Alqabass Assurex, Kuwait</h4>
+            <p class="text-muted mb-2">2013 – 2018</p>
+            <p>Handled visa applications, verified documents, and maintained secure records.</p>
+          </div>
+
+          <div class="experience_item mb-4 p-4 bg-white rounded shadow-sm">
+            <h4 class="mb-1">Accountant | Makah Hydraulics, Qatar</h4>
+            <p class="text-muted mb-2">2012 – 2013</p>
+            <p>Managed accounts payable/receivable and maintained accurate financial records.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO (SHORT) -->
+  <section id="portfolio" class="section_light">
+    <div class="container">
+      <h2 class="section_title">My <span>Portfolio</span></h2>
+
+      <div class="row mt-4">
+        {% for project in projects %}
+        <div class="col-md-4 mb-4">
+          <div class="project_card">
+            {% if project.image %}
+            <img src="{{ project.image.url }}" alt="{{ project.title }}">
+            {% else %}
+            <img src="{% static 'website/images/default-project.png' %}" alt="{{ project.title }}">
+            {% endif %}
+            <div class="project_body">
+              <h5>{{ project.title }}</h5>
+              <p>{{ project.description|truncatewords:20 }}</p>
+              <a href="{% url 'project_detail' project.pk %}" class="btn btn-sm btn-dark">View Details</a>
+            </div>
+          </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center">
+          <p>No projects added yet.</p>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT (COMPACT) -->
+  <section id="contact" class="section_white">
+    <div class="container">
+      <h2 class="section_title dark">My <span>Contact</span></h2>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+          <form class="contact_form" method="post" action="#">
+            {% csrf_token %}
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" name="name">
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" name="email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" rows="4" placeholder="Your Message" name="message"></textarea>
+            </div>
+
+            <button class="btn btn-dark px-4" type="submit">Send</button>
+          </form>
+
+          <p class="contact_note mt-3">
+            Or email me directly: <strong>yourmail@example.com</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer_section">
+    <div class="container">
+      <p class="footer_text">© {% now "Y" %} Thanveer CP. Built with Django.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <script src="{% static 'website/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+
+</html>
