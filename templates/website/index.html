@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" type="image/png" href="{% static 'website/images/favicon.png' %}">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,7 +72,7 @@
         </div>
 
         <!-- RIGHT -->
-        <div class="col-lg-5 mt-4 mt-lg-0">
+        <div class="col-lg-5 mt-2 mt-lg-0">
           <div class="profile-photo-wrap">
             <img src="{% static 'website/images/me.jpg' %}" alt="Thanveer" class="profile-photo">
           </div>
@@ -100,8 +101,8 @@
     <div class="container">
       <h2 class="section_title dark">Technical <span>Skills</span></h2>
 
-      <div class="row mt-4">
-        <div class="col-md-3 col-6 mb-4">
+      <div class="row mt-2">
+        <div class="col-md-3 col-6 mb-3">
           <div class="service_card">
             <div class="service_icon">⚙️</div>
             <h4>Backend</h4>
@@ -109,7 +110,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-6 mb-4">
+        <div class="col-md-3 col-6 mb-3">
           <div class="service_card">
             <div class="service_icon">🗄️</div>
             <h4>Database</h4>
@@ -117,7 +118,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-6 mb-4">
+        <div class="col-md-3 col-6 mb-3">
           <div class="service_card">
             <div class="service_icon">🎨</div>
             <h4>Frontend</h4>
@@ -125,7 +126,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 col-6 mb-4">
+        <div class="col-md-3 col-6 mb-3">
           <div class="service_card">
             <div class="service_icon">🧰</div>
             <h4>Tools</h4>
@@ -140,28 +141,28 @@
   <section id="experience" class="section_light">
     <div class="container">
       <h2 class="section_title">My <span>Experience</span></h2>
-      <div class="row mt-4">
+      <div class="row mt-2">
         <div class="col-lg-10 mx-auto">
 
-          <div class="experience_item mb-4 p-4 bg-white rounded shadow-sm">
+          <div class="experience_item mb-3 p-4 bg-white rounded shadow-sm">
             <h4 class="mb-1">IT Transition – Backend Development Practice</h4>
             <p class="text-muted mb-2">2025 – Present</p>
             <p>Developing RESTful APIs, implementing business logic, and practicing clean code with Python & Django.</p>
           </div>
 
-          <div class="experience_item mb-4 p-4 bg-white rounded shadow-sm">
+          <div class="experience_item mb-3 p-4 bg-white rounded shadow-sm">
             <h4 class="mb-1">Accountant Cum Cashier | Jumbo Tour & Travel Co. Kuwait</h4>
             <p class="text-muted mb-2">Sept 2018 – Dec 2024</p>
             <p>Managed financial transactions, daily sales reports, invoices, and bank reconciliations.</p>
           </div>
 
-          <div class="experience_item mb-4 p-4 bg-white rounded shadow-sm">
+          <div class="experience_item mb-3 p-4 bg-white rounded shadow-sm">
             <h4 class="mb-1">Document Controller and Cashier | Alqabass Assurex, Kuwait</h4>
             <p class="text-muted mb-2">2013 – 2018</p>
             <p>Handled visa applications, verified documents, and maintained secure records.</p>
           </div>
 
-          <div class="experience_item mb-4 p-4 bg-white rounded shadow-sm">
+          <div class="experience_item mb-3 p-4 bg-white rounded shadow-sm">
             <h4 class="mb-1">Accountant | Makah Hydraulics, Qatar</h4>
             <p class="text-muted mb-2">2012 – 2013</p>
             <p>Managed accounts payable/receivable and maintained accurate financial records.</p>
@@ -177,15 +178,11 @@
     <div class="container">
       <h2 class="section_title">My <span>Portfolio</span></h2>
 
-      <div class="row mt-4">
+      <div class="row mt-2">
         {% for project in projects %}
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-3">
           <div class="project_card">
-            {% if project.image %}
-            <img src="{{ project.image.url }}" alt="{{ project.title }}">
-            {% else %}
-            <img src="{% static 'website/images/default-project.png' %}" alt="{{ project.title }}">
-            {% endif %}
+            <!-- Image removed as per user request -->
             <div class="project_body">
               <h5>{{ project.title }}</h5>
               <p>{{ project.description|truncatewords:20 }}</p>
@@ -208,7 +205,7 @@
     <div class="container">
       <h2 class="section_title dark">My <span>Contact</span></h2>
 
-      <div class="row justify-content-center mt-4">
+      <div class="row justify-content-center mt-2">
         <div class="col-md-8">
           <form class="contact_form" method="post" action="#">
             {% csrf_token %}
